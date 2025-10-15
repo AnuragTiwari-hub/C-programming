@@ -1,6 +1,9 @@
 //Inserting an element in an array
+
 #include <stdio.h>
+
 int main()
+
 {
     int array[100], position, c, n, value;
     printf("Enter number of elements in array\n");

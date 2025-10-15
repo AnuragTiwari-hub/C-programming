@@ -2,10 +2,10 @@
 #include <stdio.h>
 int main()
 {
-    int arr[100];
     int size, i, j, temp;
     printf("Enter size of array: ");
     scanf("%d", &size);
+    int arr[100];
     printf("Enter elements in array: ");
     for (i = 0; i < size; i++)
     {
