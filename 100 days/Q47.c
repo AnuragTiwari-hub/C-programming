@@ -23,8 +23,10 @@ Output 1:
 
 int main()
 {
-    int i, j;
-    int n = 5; // number of rows
+    int i, j, n;
+    printf("enter the no of rows: ");
+    scanf("%d" ,&n);
+  // number of rows
 
     for (i = 1; i <= n; i++)
     { // loop for rows
