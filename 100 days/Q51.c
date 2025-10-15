@@ -23,19 +23,22 @@ Output 1:
 
 int main()
 {
-    int i, j, k;
+     int i, j, n, k;
+    printf("enter the no of rows: ");
+    scanf("%d" ,&n);
 
     // Loop for each row
-    for (i = 5; i >= 1; i--)
+    for (i = n; i >= 1; i--)
     {
         // Print leading spaces
         for (j = 1; j < i; j++)
+
         {
             printf(" ");
         }
 
         // Print numbers from i to 5
-        for (k = i; k <= 5; k++)
+        for (k = i; k <= n; k++)
         {
             printf("%d", k);
         }
