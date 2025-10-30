@@ -1,4 +1,4 @@
-// Passing Multi-dimensional Arrays to Function
+// write a program to Passing Multi-dimensional Arrays to Function(array ppt).
 #include <stdio.h>
 void displayNumbers(int num[2][2]);
 int main()

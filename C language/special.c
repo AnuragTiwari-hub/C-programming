@@ -1,3 +1,4 @@
+//write the program to print the storage size for int, char,float,double data type.
 #include <stdio.h>
 
 #include <limits.h>

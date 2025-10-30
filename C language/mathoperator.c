@@ -1,3 +1,4 @@
+//write a program to uses mathmatical operator(add,sub,mul,div,mod) and print the result.
 #include <stdio.h>
 
 void main()

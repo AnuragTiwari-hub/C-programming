@@ -1,3 +1,5 @@
+/*write a program to find the value of j if j= i++ + ++i + i++ 
+ if i=1 and at the end print the value of i , j.*/
 #include <stdio.h>
 
 void main()

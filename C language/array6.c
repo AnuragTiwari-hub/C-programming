@@ -1,4 +1,4 @@
-// Sorting an Array
+// write a program to Sorting an Array(array ppt).
 #include <stdio.h>
 int main()
 {

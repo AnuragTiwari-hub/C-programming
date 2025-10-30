@@ -1,3 +1,4 @@
+//Write a C program to declare and initialize array and print the whole array(array ppt).
 #include <stdio.h>
 int main()
 {

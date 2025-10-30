@@ -1,3 +1,4 @@
+//user of increase or decrease function
 #include <stdio.h>
 
 void main()

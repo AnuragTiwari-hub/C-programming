@@ -1,3 +1,4 @@
+// write the program to print the string for greeting message "Hello".
 #include <stdio.h>
 int main()
 {

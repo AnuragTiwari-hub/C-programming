@@ -1,3 +1,4 @@
+//WAP to print the number from 1 to 10 using for loop.
 #include <stdio.h>
 
 int main()

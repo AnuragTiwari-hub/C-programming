@@ -1,3 +1,4 @@
+//write the program to print the value of variable.
 #include <stdio.h>
 
 int main()

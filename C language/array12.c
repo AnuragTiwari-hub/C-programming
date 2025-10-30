@@ -1,4 +1,4 @@
-// Array with Pointers
+//write a program Array with Pointers (array ppt).
 #include <stdio.h>
 int main()
 {

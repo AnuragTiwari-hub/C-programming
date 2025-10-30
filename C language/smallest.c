@@ -1,3 +1,4 @@
+//write the program to find the smallest no among three no entered by the user.
 #include <stdio.h>
 
 int main()

@@ -1,4 +1,4 @@
-// C program to pass a single element of an array to function
+// C program to pass a single element of an array to function(array ppt).  
 #include <stdio.h>
 void display(int age)
 {

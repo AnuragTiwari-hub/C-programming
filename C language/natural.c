@@ -1,3 +1,4 @@
+//WAP to print sum of first n natural no entered by user.
 #include <stdio.h>
 
 int main()

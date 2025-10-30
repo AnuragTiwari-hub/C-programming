@@ -1,4 +1,4 @@
-// palindrome no
+// write the program to check wheather the input no is palindrome no or not.
 #include <stdio.h>
 
 int main()

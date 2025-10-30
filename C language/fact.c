@@ -1,3 +1,4 @@
+//WAP to calculate the factorial of input number.
 #include <stdio.h>
 int main()
 {

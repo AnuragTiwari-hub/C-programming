@@ -1,3 +1,4 @@
+//write the program to find the output using ternary operator.
 #include <stdio.h>
 int main()
 {

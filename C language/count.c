@@ -1,3 +1,4 @@
+//write a program to count the no of digit of entered no.
 #include <stdio.h>
 int main()
 {

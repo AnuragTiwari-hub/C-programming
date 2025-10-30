@@ -1,4 +1,4 @@
-//Inserting an element in an array
+//write a program to Inserting an element in an array(array ppt).
 
 #include <stdio.h>
 

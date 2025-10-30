@@ -1,4 +1,4 @@
-// Searching an element in an array
+//  write a program to Searching an element in an array(array ppt).
 #include <stdio.h>
 int main()
 {

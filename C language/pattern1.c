@@ -1,3 +1,8 @@
+// write the program to print the pattern 
+/*    *
+     **
+    ***
+ */
 #include <stdio.h>
 
 int main()

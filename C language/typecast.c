@@ -1,3 +1,4 @@
+//Write the program to find the mean of the 5 no,s whose sum is 17.
 #include<stdio.h>
 
 void main()

@@ -1,4 +1,4 @@
-// Accessing Two-Dimensional Array Elements
+// write a program to Accessing Two-Dimensional Array Elements(array ppt). 
 #include <stdio.h>
 int main()
 {

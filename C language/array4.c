@@ -1,4 +1,4 @@
-// Deleting an element in array
+// write a program to Deleting an element in array(array ppt).
 #include <stdio.h>
 int main()
 {

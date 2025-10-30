@@ -1,4 +1,4 @@
-// Adding two matrices
+// write a program to Adding two matrices (array ppt).
 #include <stdio.h>
 int main()
 {

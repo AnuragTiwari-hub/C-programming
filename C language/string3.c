@@ -1,3 +1,4 @@
+//write the program to copy string1 to string3 and cocatenates string1 &string2and also print total length of str1 after concatenation .
 #include <stdio.h>
 #include <string.h>
 void main()

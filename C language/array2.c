@@ -1,3 +1,4 @@
+// write a program to enter no of student and add marks of all student by taking user input(array ppt).
 #include <stdio.h>
 void main()
 {

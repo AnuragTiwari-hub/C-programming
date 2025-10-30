@@ -1,4 +1,4 @@
-// Passing an entire one-dimensional array to a function
+// write a program to Passing an entire one-dimensional array to a function(array ppt).
 #include <stdio.h>
 float average(float age2[]);
 int main()
