@@ -2,13 +2,13 @@
 #include<stdio.h>
 int main()
 {
-    float length,width,area,perimeter;
+    int length,width,area,perimeter;
     printf("enter the length: ");
-    scanf("%f", &length);
+    scanf("%d", &length);
     printf("enter the width: ");
-    scanf("%f", &width);
+    scanf("%d", &width);
     area = length * width;
     perimeter = 2 * (length + width);
-    printf("Area %f", area);
-    printf("perimeter %f", perimeter);
+    printf("Area %d" ,area);
+    printf("\nperimeter %d", perimeter);
 }

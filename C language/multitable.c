@@ -4,7 +4,7 @@ It should be in the correct formatting.   Num * 1 = Num . */
 int main()
 {
     int i, num;
-    printf("enter a no");
+    printf("enter a no: ");
     scanf("%d", &num);
 
     printf("multiplication table of %d:\n", num);
