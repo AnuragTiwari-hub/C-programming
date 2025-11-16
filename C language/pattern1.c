@@ -1,7 +1,8 @@
 // write the program to print the pattern 
-/*    *
-     **
-    ***
+/*   
+       *
+      **
+     ***
  */
 #include <stdio.h>
 
@@ -20,7 +21,7 @@ int main()
         }
 
        
-        for (k = i ; k <= n; k++)
+        for (k = i; k <= n; k++)
         {
             printf("*");
         }

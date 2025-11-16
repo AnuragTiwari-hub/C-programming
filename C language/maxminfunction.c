@@ -28,10 +28,11 @@ int main() {
     
     int n, i;
     int max, min;
+    printf("How many numbers: ");
     scanf("%d", &n);
 
     int a[n];
-    printf("How many numbers ");
+    
     printf("Enter %d numbers:", n);
     for (i = 0; i < n; i++)
     {

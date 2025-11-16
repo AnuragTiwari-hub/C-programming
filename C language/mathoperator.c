@@ -9,15 +9,15 @@ void main()
 
     add = a + b;
 
-    sub - a - b;
+    sub = a - b;
 
     mul = a * b;
 
-    div - a / b;
+    div = a / b;
 
     mod = a % b;
 
-    printf("Addition of a,b ts:%d\n", add);
+    printf("Addition of a,b is:%d\n", add);
 
     printf("subtraction of a,b is:%d\n", sub);
 

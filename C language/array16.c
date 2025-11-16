@@ -26,6 +26,6 @@ int main()
             count++;
     }
 
-    printf("Frequency is: %d\n", num, count);
+    printf("Frequency is: %d\n", count);
     return 0;
 }

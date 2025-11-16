@@ -17,7 +17,7 @@ int main()
 {
     int num;
     long f;
-     printf("enter a value");
+     printf("enter a value: ");
     scanf("%d", &num);
 
     long result =  facto(num);

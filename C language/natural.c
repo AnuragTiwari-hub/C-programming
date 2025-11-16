@@ -6,7 +6,7 @@ int main()
 {
     int n, sum;
 
-    printf("enter the positive no");
+    printf("enter the positive no: ");
     scanf("%d", &n);
 
     sum = n * (n + 1) / 2;

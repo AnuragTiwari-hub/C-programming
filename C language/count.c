@@ -1,9 +1,10 @@
 //write a program to count the no of digit of entered no.
+
 #include <stdio.h>
 int main()
 {
     int num, c = 0;
-    printf("enter a no");
+    printf("enter a no: ");
     scanf("%d", &num);
     if (num == 0)
     {
