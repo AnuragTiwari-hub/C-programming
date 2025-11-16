@@ -28,8 +28,10 @@ Note: Spaces indicate indentation.
 
 int main()
 {
-    int i, j, n = 5; // number of rows
-
+    int i, j, n;
+    printf("enter the no of rows: ");
+    scanf("%d" ,&n);
+    
     for (i = 0; i < n; i++)
     { // loop for rows
         // print leading spaces

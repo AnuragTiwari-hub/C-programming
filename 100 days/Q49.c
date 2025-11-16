@@ -23,9 +23,10 @@ Output 1:
 
 int main()
 {
-    int i, j;
-    int n = 5; // number of rows
-
+    int i, j, n;
+    printf("enter the no of rows: ");
+    scanf("%d" ,&n);
+    
     for (i = n; i >= 1; i--)
     { // starting number for each row
         for (j = i; j <= n; j++)
