@@ -15,19 +15,17 @@ int main()
 {
     char str[100];
     int i, spaces = 0, digits = 0, special = 0;
-rrrrr
+    printf("Enter a string: ");
+    scanf("%[^\n]", str);
     for (i = 0; str[i] != '\0'; i++)
     {
         if (str[i] == ' ')
             spaces++;
-        else 
-        if (str[i] >= '0' && str[i] <= '9')
+        else if (str[i] >= '0' && str[i] <= '9')
             digits++;
-        else 
-        if ((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a' && str[i] <= 'z'))
-            ; // skip alphabets
-        else 
-        if (str[i] != '\n')
+        else if ((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a' && str[i] <= 'z'))
+            ;
+        else if (str[i] != '\n')
             special++;
     }
 
