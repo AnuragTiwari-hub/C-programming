@@ -1,51 +1,44 @@
-//Write a C program to take check if the triangle is valid or not. If the validity is established, do check if the triangle is isosceles, equilateral, right angle, or scalene. Take sides of the triangle as input from a user
+/* Write a C program to take check if the triangle is valid or not.
+If the validity is established, do check if the triangle is isosceles, equilateral, right angle, or scalene.
+Take sides of the triangle as input from a user.
+*/
 #include <stdio.h>
 
 int main()
-
 {
     int a, b, c;
 
-    printf("enter three sides of triangle\n ");
-    scanf("%d,%d,%d", &a, &b, &c);
+    printf("Enter three sides of the triangle: ");
+    scanf("%d %d %d", &a, &b, &c);
 
-    if ((a + b > c) || (a + c > b) || (b + c > a))
-
+    // Check validity using triangle inequality theorem
+    if (a + b > c && a + c > b && b + c > a)
     {
-        printf(" it is a valid triangle \n ");
+        printf("The triangle is valid.\n");
+
+        // Check type of triangle
         if (a == b && b == c)
-
         {
-            printf("the triangle is equilateral \n ");
+            printf("It is an Equilateral triangle.\n");
         }
-
-        else
-
-            if (a == b || b == c || a == c)
-
+        else if (a == b || b == c || a == c)
         {
-            printf(" the triangle is isoceles \n ");
+            printf("It is an Isosceles triangle.\n");
         }
-
         else
         {
+            printf("It is a Scalene triangle.\n");
+        }
 
-            printf("the triangle is scalene \n ");
-            {
-
-                if ((a * a == b * b + c * c) || (b * b == a * a + c * c) || (c * c == a * a + b * b))
-
-                {
-                    printf(" the triangle is right angle triangle");
-                }
-            }
+        // Check for right-angled triangle using Pythagoras theorem
+        if (a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a)
+        {
+            printf("It is also a Right-angled triangle.\n");
         }
     }
     else
-
     {
-
-        printf("the given sides do not form valid triangle");
+        printf("The triangle is NOT valid.\n");
     }
 
     return 0;
