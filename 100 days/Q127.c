@@ -11,24 +11,29 @@ Output File (output.txt): HELLO WORLD\nC PROGRAMMING
 #include <stdio.h>
 #include <ctype.h>
 
-int main() {
+int main()
+{
     FILE *input = fopen("input.txt", "r");
     FILE *output = fopen("output.txt", "w");
-    
-    if (input == NULL || output == NULL) {
-        printf("Error opening files.\n");
+
+    if (input == NULL || output == NULL)
+    {
+        printf("Error opening file.\n");
         return 1;
     }
-    
+
     int ch;
-    while ((ch = fgetc(input)) != EOF) {
-        if (islower(ch)) {
+    while ((ch = fgetc(input)) != EOF)
+    {
+        if (islower(ch))
+        {
             ch = toupper(ch);
         }
         fputc(ch, output);
     }
-    
+
     fclose(input);
     fclose(output);
+
     return 0;
 }

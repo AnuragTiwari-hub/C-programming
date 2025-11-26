@@ -11,18 +11,22 @@ Average = 30.00
 */
 #include <stdio.h>
 
-int main() {
+int main()
+{
     FILE *fp;
     int num, sum = 0, count = 0;
-    double avg;
+    float average;
 
     fp = fopen("numbers.txt", "r");
-    if (fp == NULL) {
-        printf("Error opening file.\n");
+    if (fp == NULL)
+    {
+        printf("Error: Could not open file.\n");
         return 1;
     }
 
-    while (fscanf(fp, "%d", &num) == 1) {  // read integers one by one
+    // Read integers until EOF
+    while (fscanf(fp, "%d", &num) == 1)
+    {
         sum += num;
         count++;
     }
@@ -30,12 +34,15 @@ int main() {
     fclose(fp);
 
     if (count > 0)
-        avg = (double)sum / count;
+    {
+        average = (float)sum / count;
+        printf("Sum = %d\n", sum);
+        printf("Average = %.2f\n", average);
+    }
     else
-        avg = 0.0;
-
-    printf("Sum = %d\n", sum);
-    printf("Average = %.2f\n", avg);
+    {
+        printf("No numbers in file.\n");
+    }
 
     return 0;
 }

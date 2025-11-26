@@ -12,42 +12,63 @@ Lines: 2
 
 */
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
+    char filename[100];
     FILE *fp;
-    char ch;
-    int characters = 0, words = 0, lines = 0;
-    int inWord = 0;
+    int ch;
+    int chars = 0, words = 0, lines = 0;
+    int in_word = 0;
 
-    fp = fopen("sample.txt", "r"); 
+    printf("Enter the filename: ");
+    scanf("%s", filename);
+
+    fp = fopen(filename, "r");
     if (fp == NULL)
     {
-        printf("File not found!\n");
+        printf("Error opening file.\n");
         return 1;
     }
 
     while ((ch = fgetc(fp)) != EOF)
     {
-        characters++;
-
+        chars++;
         if (ch == '\n')
-            lines++;
-
-        if (ch == ' ' || ch == '\n' || ch == '\t')
-            inWord = 0;
-        else if (inWord == 0)
         {
-            words++;
-            inWord = 1;
+            lines++;
+            if (in_word)
+            {
+                words++;
+                in_word = 0;
+            }
         }
+        else if (ch == ' ' || ch == '\t')
+        {
+            if (in_word)
+            {
+                words++;
+                in_word = 0;
+            }
+        }
+        else
+        {
+            in_word = 1;
+        }
+    }
+
+    lines++;
+    if (in_word)
+    {
+        words++;
     }
 
     fclose(fp);
 
-    printf("Characters: %d\n", characters);
+    printf("Characters: %d\n", chars);
     printf("Words: %d\n", words);
     printf("Lines: %d\n", lines);
 
     return 0;
-}  
+}

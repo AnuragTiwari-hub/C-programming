@@ -14,11 +14,15 @@ Consonants: 10
 
 int main()
 {
+    char filename[100];
     FILE *fp;
-    char ch;
+    int ch;
     int vowels = 0, consonants = 0;
 
-    fp = fopen("text.txt", "r");
+    printf("Enter the filename: ");
+    scanf("%s", filename);
+
+    fp = fopen(filename, "r");
     if (fp == NULL)
     {
         printf("Error opening file.\n");
@@ -27,13 +31,17 @@ int main()
 
     while ((ch = fgetc(fp)) != EOF)
     {
-        ch = tolower(ch);
         if (isalpha(ch))
         {
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+            char lower = tolower(ch);
+            if (lower == 'a' || lower == 'e' || lower == 'i' || lower == 'o' || lower == 'u')
+            {
                 vowels++;
+            }
             else
+            {
                 consonants++;
+            }
         }
     }
 
