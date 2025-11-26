@@ -34,7 +34,6 @@ int main()
         scanf("%d", &nums[i]);
     }
 
-    // Moore's Voting Algorithm to find candidate
     int candidate = -1;
     int count = 0;
     for (int i = 0; i < n; i++)
@@ -54,7 +53,6 @@ int main()
         }
     }
 
-    // Verify if candidate is majority
     count = 0;
     for (int i = 0; i < n; i++)
     {

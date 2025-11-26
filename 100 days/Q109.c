@@ -41,7 +41,6 @@ int main()
         return 1;
     }
 
-    // Calculate sum of first k elements
     int current_sum = 0;
     for (int i = 0; i < k; i++)
     {
@@ -49,7 +48,6 @@ int main()
     }
     int max_sum = current_sum;
 
-    // Slide the window
     for (int i = k; i < n; i++)
     {
         current_sum = current_sum - arr[i - k] + arr[i];

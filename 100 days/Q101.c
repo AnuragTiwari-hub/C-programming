@@ -20,15 +20,12 @@ Output 3:
 5,5
 */
 #include <stdio.h>
-#include <stdlib.h> // For qsort
-
-// Comparison function for qsort (ascending order)
+#include <stdlib.h> 
 int compare(const void *a, const void *b)
 {
     return (*(int *)a - *(int *)b);
 }
 
-// Function to find first occurrence
 int findFirst(int nums[], int n, int target)
 {
     int left = 0, right = n - 1;
@@ -53,7 +50,6 @@ int findFirst(int nums[], int n, int target)
     return first;
 }
 
-// Function to find last occurrence
 int findLast(int nums[], int n, int target)
 {
     int left = 0, right = n - 1;
@@ -90,7 +86,6 @@ int main()
         scanf("%d", &nums[i]);
     }
 
-    // Sort the array before searching
     qsort(nums, n, sizeof(int), compare);
 
     printf("Enter the target value: ");

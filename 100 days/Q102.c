@@ -38,7 +38,7 @@ int find_ceil(int arr[], int n, int x)
       if (arr[mid] >= x)
       {
          result = mid;
-         right = mid - 1; // Continue searching in the left half for the smallest index
+         right = mid - 1; 
       }
       else
       {
@@ -53,7 +53,7 @@ int main()
    int n;
    printf("enter the size of array: ");
    scanf("%d", &n);
-   int arr[100000]; // Assuming n <= 100000; adjust if needed
+   int arr[100000];
    for (int i = 0; i < n; i++)
    {
 printf("enter eleent of array: ");

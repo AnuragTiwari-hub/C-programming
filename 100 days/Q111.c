@@ -43,22 +43,19 @@ int main()
         return 1;
     }
 
-    int deq[MAXN]; // deque to store indices of negative numbers
+    int deq[MAXN]; 
     int front = 0, rear = -1;
 
     for (int i = 0; i < n; i++)
     {
-        // Remove indices out of the current window
         while (front <= rear && deq[front] < i - k + 1)
         {
             front++;
         }
-        // Add current index if negative
         if (arr[i] < 0)
         {
             deq[++rear] = i;
         }
-        // If window is full, print the first negative or 0
         if (i >= k - 1)
         {
             if (front <= rear)

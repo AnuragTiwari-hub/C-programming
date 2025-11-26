@@ -42,7 +42,7 @@ int main()
 
     if (x * x == half && x >= 1 && x <= n)
     {
-        // Verify the sums
+       
         long long sum_left = x * (x + 1) / 2;
         long long sum_right = (long long)n * (n + 1) / 2 - (x - 1) * x / 2;
         if (sum_left == sum_right)

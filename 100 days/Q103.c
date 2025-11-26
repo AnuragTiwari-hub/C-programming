@@ -29,7 +29,7 @@ int main()
 {
     int n;
     scanf("%d", &n);
-    long long arr[100005]; // Assuming n <= 100000; adjust if needed
+    long long arr[100005]; 
     for (int i = 0; i < n; i++)
     {
         scanf("%lld", &arr[i]);

@@ -57,7 +57,7 @@ int quickSelect(int arr[], int low, int high, int k)
             return quickSelect(arr, pi + 1, high, k);
         }
     }
-    return -1; // Should not reach here if k is valid
+    return -1; 
 }
 
 int main()

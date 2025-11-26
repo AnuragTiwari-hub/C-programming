@@ -38,24 +38,22 @@ int main()
         return 1;
     }
 
-    int deq[MAXN]; // deque to store indices
+    int deq[MAXN]; 
     int front = 0, rear = -1;
 
     for (int i = 0; i < n; i++)
     {
-        // Remove elements from rear that are smaller than or equal to arr[i]
         while (front <= rear && arr[deq[rear]] <= arr[i])
         {
             rear--;
         }
-        // Add current index to rear
+        
         deq[++rear] = i;
-        // Remove from front if out of window
+        
         if (deq[front] == i - k)
         {
             front++;
         }
-        // If window is full, print the max
         if (i >= k - 1)
         {
             printf("%d ", arr[deq[front]]);
