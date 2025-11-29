@@ -24,12 +24,14 @@ Output 3:
 int main()
 {
     int n;
+    printf("enter no of element in array: ");
     scanf("%d", &n);
     int nums[n];
     int sum = 0;
 
     for (int i = 0; i < n; i++)
     {
+        printf("enter the array element: ");
         scanf("%d", &nums[i]);
         sum += nums[i];
     }

@@ -32,10 +32,12 @@ Output 4:
 int main()
 {
     int n;
+    printf("enter no of element in array: ");
     scanf("%d", &n);
     int arr[n];
     for (int i = 0; i < n; i++)
     {
+        printf("enter the array element: ");
         scanf("%d", &arr[i]);
     }
 

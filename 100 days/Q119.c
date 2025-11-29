@@ -24,23 +24,20 @@ Output 3:
 int main()
 {
     int n;
+    printf("enter no of element in array: ");
     scanf("%d", &n);
-    int nums[n];
-    for (int i = 0; i < n; i++)
-        scanf("%d", &nums[i]);
-
-    int seen[100000] = {0};
+    int arr[n];
+    long long sum = 0;
 
     for (int i = 0; i < n; i++)
     {
-        if (seen[nums[i]])
-        {
-            printf("%d\n", nums[i]);
-            return 0;
-        }
-        seen[nums[i]] = 1;
+        printf("enter the array element: ");
+        scanf("%d", &arr[i]);
+        sum += arr[i];
     }
 
-    printf("-1\n");
+    long long expected = (long long)(n - 1) * n / 2; // sum of 0..n-1
+    printf("%lld\n", sum - expected);
+
     return 0;
 }

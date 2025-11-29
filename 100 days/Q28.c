@@ -19,19 +19,17 @@ Output 2:
 int main()
 {
     int n;
-    long long product = 1; // Use long long to handle larger products
+    long long product = 1; 
 
-    // Input n
     printf("Enter a number: ");
     scanf("%d", &n);
 
-    // Calculate product of even numbers from 1 to n
     for (int i = 2; i <= n; i += 2)
     {
         product *= i;
     }
 
-    printf("%lld\n", product); // Display result
+    printf("%lld\n", product); 
 
     return 0;
 }

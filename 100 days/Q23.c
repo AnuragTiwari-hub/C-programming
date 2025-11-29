@@ -34,7 +34,6 @@ int main()
 {
     int days, fine = 0;
 
-    // Input number of late days
     printf("Enter number of late days: ");
     scanf("%d", &days);
 

@@ -35,11 +35,9 @@ int main()
 {
     int percentage;
 
-    // Input percentage
     printf("Enter percentage: ");
     scanf("%d", &percentage);
 
-    // Assign grade based on criteria
     if (percentage >= 90 && percentage <= 100)
     {
         printf("Grade A\n");

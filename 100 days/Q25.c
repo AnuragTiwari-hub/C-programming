@@ -26,11 +26,9 @@ int main()
     int a, b, result;
     char op;
 
-    // Input two numbers and operator
     printf("Enter two numbers and an operator (+, -, *, /, %%): ");
     scanf("%d %d %c", &a, &b, &op);
 
-    // Perform calculation using switch-case
     switch (op)
     {
     case '+':

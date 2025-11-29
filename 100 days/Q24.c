@@ -30,7 +30,6 @@ int main()
     int units;
     int bill = 0;
 
-    // Input units consumed
     printf("Enter units consumed: ");
     scanf("%d", &units);
 
@@ -51,7 +50,6 @@ int main()
         bill = 100 * 5 + 100 * 7 + 100 * 10 + (units - 300) * 12;
     }
 
-    // Display the bill
     printf("Bill: ₹%d\n", bill);
 
     return 0;

@@ -20,18 +20,16 @@ int main()
 {
     int num, sum = 0;
 
-    // Input number
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    // Calculate sum of digits
     while (num != 0)
     {
-        sum += num % 10; // Extract last digit
-        num /= 10;       // Remove last digit
+        sum += num % 10; 
+        num /= 10;      
     }
 
-    printf("%d\n", sum); // Display result
+    printf("%d\n", sum); 
 
     return 0;
 }

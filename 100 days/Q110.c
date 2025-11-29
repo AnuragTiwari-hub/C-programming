@@ -16,48 +16,34 @@ Output 2:
 
 */
 #include <stdio.h>
-#define MAXN 100000
 
 int main()
 {
     int n, k;
-    printf("no of element in array: ");
+    printf("enter no of element in array: ");
     scanf("%d", &n);
-    int arr[MAXN];
+    int arr[n];
     for (int i = 0; i < n; i++)
     {
-        printf("enter element in array: ");
+        printf("enter the array element: ");
         scanf("%d", &arr[i]);
     }
-    printf("enter the value integer k: ");
+    printf("enter the value of k: ");
     scanf("%d", &k);
 
-    if (k > n || k <= 0)
+    for (int i = 0; i <= n - k; i++)
     {
-        printf("Invalid k\n");
-        return 1;
-    }
-
-    int deq[MAXN]; 
-    int front = 0, rear = -1;
-
-    for (int i = 0; i < n; i++)
-    {
-        while (front <= rear && arr[deq[rear]] <= arr[i])
+        int max = arr[i];
+        for (int j = i; j < i + k; j++)
         {
-            rear--;
+            if (arr[j] > max)
+            {
+                max = arr[j];
+            }
         }
-        
-        deq[++rear] = i;
-        
-        if (deq[front] == i - k)
-        {
-            front++;
-        }
-        if (i >= k - 1)
-        {
-            printf("%d ", arr[deq[front]]);
-        }
+        printf("%d", max);
+        if (i != n - k)
+            printf(" ");
     }
     printf("\n");
     return 0;
